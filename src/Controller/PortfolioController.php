@@ -52,20 +52,8 @@ class PortfolioController extends AbstractController
                 // Log the actual error for debugging
                 error_log('Email sending error: ' . $e->getMessage());
                 
-                // TEMPORARY DEBUG: Show detailed error information
-                $debugInfo = [
-                    'Error Message' => $e->getMessage(),
-                    'Error Class' => get_class($e),
-                    'Error Code' => $e->getCode(),
-                    'File' => $e->getFile() . ':' . $e->getLine(),
-                    'Mailer DSN' => $_ENV['MAILER_DSN'] ?? 'Not set',
-                    'App Environment' => $_ENV['APP_ENV'] ?? 'Not set'
-                ];
-                
-                $debugMessage = "DEBUG INFO:\n" . print_r($debugInfo, true);
-                
-                // Show detailed error for debugging (temporarily always show)
-                $this->addFlash('error', 'ERREUR TEMPORAIRE POUR DEBUG: ' . $e->getMessage() . "\n\n" . $debugMessage);
+                // Show user-friendly error message
+                $this->addFlash('error', 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer.');
             }
 
             return $this->redirectToRoute('app_contact');
