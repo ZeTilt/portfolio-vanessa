@@ -159,25 +159,31 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
   transition: height var(--transition);
 }
 
 @media (max-width: 768px) {
   .logo img {
-    height: 35px;
+    height: 45px;
   }
 }
 
 @media (max-width: 480px) {
   .logo img {
-    height: 30px;
+    height: 35px;
   }
 }
 nav {
   display: flex;
-  margin-top: 175px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
 }
 
 nav ul {
@@ -222,12 +228,16 @@ nav ul li:hover ul.submenu {
   display: none;
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--color-accent);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 4px;
   transition: background-color var(--transition);
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .burger:hover {
@@ -1109,22 +1119,22 @@ display: flex;
 /* Responsive */
 @media (max-width: 768px) {
   .burger {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    display: flex;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 4rem;
+    top: 100%;
     left: 0;
+    right: 0;
     width: 100%;
     background-color: #fff;
     padding: 1rem;
     z-index: 999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #eee;
   }
 
   .nav-links.open {
@@ -1141,6 +1151,8 @@ display: flex;
     border: none;
     display: none;
     flex-direction: column;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
   }
 
   .has-submenu.open .submenu {
