@@ -37,13 +37,27 @@ class PortfolioController extends AbstractController
                     'name' => $data['name'],
                     'email' => $data['email'],
                     'message' => $data['message'],
-                ]));
+                ]))
+                ->text(sprintf(
+                    "Nouveau message depuis le portfolio\n\nNom: %s\nEmail: %s\nMessage:\n%s",
+                    $data['name'],
+                    $data['email'],
+                    $data['message']
+                ));
 
             try {
                 $mailer->send($email);
                 $this->addFlash('success', 'Votre message a été envoyé avec succès !');
             } catch (\Exception $e) {
-                $this->addFlash('error', 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer.');
+                // Log the actual error for debugging
+                error_log('Email sending error: ' . $e->getMessage());
+                
+                // Show user-friendly error message in production
+                if ($_ENV['APP_ENV'] === 'dev') {
+                    $this->addFlash('error', 'Erreur d\'envoi: ' . $e->getMessage());
+                } else {
+                    $this->addFlash('error', 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer.');
+                }
             }
 
             return $this->redirectToRoute('app_contact');
