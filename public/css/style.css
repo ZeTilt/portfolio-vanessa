@@ -571,17 +571,29 @@ h1 {
 }
 
 .projects-title {
-  font-size: 3.5rem;
-  
+  font-size: 2.2rem;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .projects-subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 4rem;
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .projects-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
   
+  .projects-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
 .project-grid {
@@ -743,14 +755,22 @@ width: 100%;
 }
 
 .project-subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555;
   line-height: 1.6;
   margin-bottom: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .project-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
 .project-meta {
-display: flex;
+  display: flex;
   justify-content: flex-start; 
   gap: 2rem; 
   font-size: 1rem;
@@ -759,18 +779,34 @@ display: flex;
   margin-top: 2rem;
   padding-left: 0; 
   flex-wrap: wrap; 
-  padding-top: 100px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .project-meta {
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .project-meta span {
   display: inline-block;
 }
 
 .project-title {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   font-weight: 900;
-  
   margin-bottom: 1rem;
   text-transform: uppercase;
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .project-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 }
 
 .project-image {
@@ -901,7 +937,7 @@ display: flex;
 
 @media (max-width: 768px) {
   .project-text {
-    text-align: center;
+    text-align: left;
     padding: 0 1rem;
   }
 }
@@ -971,13 +1007,19 @@ display: flex;
 }
 
 .double-image-container img {
-  width: 50%;
- 
-  height: 700px;
+  width: 100%;
+  height: 300px;
   object-fit: contain;
   border: none;
   box-shadow: none;
   background: transparent;
+}
+
+@media (min-width: 769px) {
+  .double-image-container img {
+    width: 50%;
+    height: 700px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -985,18 +1027,12 @@ display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-
-.double-image-container img {
-  width: 100%;
-  height: unset;
-}
-
 }
 @media (max-width: 768px) {
   .project-text p,
   .project-subheading,
   .project-text ul {
-    text-align: center;
+    text-align: left;
   }
 }
 .nav {
