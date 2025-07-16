@@ -983,11 +983,12 @@ display: flex;
 @media (max-width: 768px) {
   .double-image-container {
     flex-direction: column;
-  gap: 2rem;
-}
+    gap: 2rem;
+  }
 
 .double-image-container img {
-  max-width: 100%;
+  width: 100%;
+  height: unset;
 }
 
 }
