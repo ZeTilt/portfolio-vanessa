@@ -23,6 +23,28 @@ burgerBtn.addEventListener('click', () => {
 });
 
 
+  // Bouton retour en haut
+  const topButton = document.getElementById('topButton');
+  
+  if (topButton) {
+    // Afficher/masquer le bouton selon le scroll
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        topButton.classList.add('visible');
+      } else {
+        topButton.classList.remove('visible');
+      }
+    });
+    
+    // Retour en haut au clic
+    topButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
   // Script loaded successfully
 });
 
