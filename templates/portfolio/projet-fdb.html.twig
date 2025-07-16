@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet - Fleur de Bouchon 56{% endblock %}
+
+{% block body %}
+<section class="project-hero container fade-in">
+    <h1 class="project-title">FLEUR DE BOUCHONS 56</h1>
+    <p class="project-subtitle">
+        Refonte complète du site web d'une association engagée dans la collecte et le recyclage de bouchons en plastique, à des fins solidaires.
+    </p>
+    <p class="project-subtitle">
+        Un projet global de conception, design graphique, structuration éditoriale et intégration front-end.
+    </p>
+    <div class="project-meta">
+        <span><strong>(Client)</strong><br>Fleur de Bouchons 56</span>
+        <span><strong>(Année)</strong><br>2025</span>
+        <span><strong>(Services)</strong><br>UX Design, UI Design, Webdesign, Code HTML/CSS, Contenu éditorial</span>
+    </div>
+</section>
+
+<section class="full-width-image fade-in">
+    <img src="{{ asset('img/Card_FDB2.webp') }}" alt="Visuel Fleur de Bouchons" />
+</section>
+
+<section class="project-block no-line">
+    <div class="project-flex fade-in">
+        <div class="project-text">
+            <h2 class="project-heading-big">
+                UNE<br>ASSOCIATION LOCALE,<br>UN SITE A LA HAUTEUR<br>DE LEUR ENGAGEMENT
+            </h2>
+        </div>
+        <div class="project-text">
+            <p>Fleur de Bouchons 56 collecte et recycle des bouchons plastiques au bénéfice de personnes en situation de handicap.</p>
+            <p>Mon intervention a consisté à valoriser leur action à travers une refonte totale du site, respectueuse de leur identité visuelle existante tout en modernisant structure, navigation et lisibilité.</p>
+            <p>Un accompagnement global a été mené, de l'étude initiale jusqu'à l'intégration HTML/CSS, avec une attention particulière portée à l'accessibilité, au responsive design, et à la pédagogie des contenus.</p>
+        </div>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/FDB4.webp') }}" alt="Maquettes figma Fleur de Bouchons">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Un design graphique au service du sens</h3>
+        <p>J'ai conçu un univers visuel simple, coloré et lisible, pensé pour un public intergénérationnel.
+        Les visuels soutiennent les messages clés de l'association : solidarité, proximité, accessibilité.
+        Les pictogrammes et illustrations ont été créés sur mesure pour traduire les différentes formes de participation.</p>
+    </div>
+</section>
+
+<section class="project-block project-flex reverse fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/FDB3.webp') }}" alt="visuel appel a l'action FDB">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Un ancrage local et des points de collecte visibles</h3>
+        <p>La cartographie des points de collecte est au cœur de l'activité de l'association.
+        J'ai conçu une interface claire, illustrée, avec des boutons d'appel à l'action directs pour savoir où et comment déposer ses bouchons, tout en conservant une navigation fluide sur mobile.</p>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/FDB5.webp') }}" alt="site web responsive FDB">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Un site pensé pour l'accessibilité et la lisibilité</h3>
+        <p>L'ensemble du site a été codé en HTML/CSS avec une approche mobile-first.
+        Une attention particulière a été portée à la structuration sémantique (balises Hn, alt, SEO), à la hiérarchie des informations, et au confort de lecture.
+        Chaque page a été conçue comme un parcours clair, logique et rassurant.</p>
+    </div>
+</section>
+
+<section class="project-double-image">
+    <div class="double-image-container">
+        <img src="{{ asset('img/FDB1.webp') }}" alt="graphisme etapes – Fleur de Bouchons">
+        <img src="{{ asset('img/FDB2.webp') }}" alt="creation icones – Fleur de Bouchons">
+    </div>
+</section>
+{% endblock %}

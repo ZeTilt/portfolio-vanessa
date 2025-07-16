@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet - L'Arche de Ninie{% endblock %}
+
+{% block body %}
+<section class="project-hero container fade-in">
+    <h1 class="project-title">L'ARCHE DE NINIE</h1>
+    <p class="project-subtitle">
+        Une communication au service du cœur.<br> L'identité d'une association qui sauve, soigne… et rassemble.
+    </p>
+    <p class="project-subtitle">
+        Un projet bénévole mené avec rigueur et passion pour révéler visuellement l'engagement de l'association.
+    </p>
+    <div class="project-meta">
+        <span><strong>(Client)</strong><br>L'arche de Ninie</span>
+        <span><strong>(Année)</strong><br>2024</span>
+        <span><strong>(Services)</strong><br>Direction artistique, charte graphique, UX/UI, print & web</span>
+    </div>
+</section>
+
+<section class="full-width-image fade-in">
+    <img src="{{ asset('img/Card_ADN2.webp') }}" alt="Visuel Arche de Ninie" />
+</section>
+
+<section class="project-block no-line">
+    <div class="project-flex fade-in">
+        <div class="project-text">
+            <h2 class="project-heading-big">
+                UNE<br>COMMUNICATION<br>À LA HAUTEUR DE<br>LEURS ACTIONS
+            </h2>
+        </div>
+        <div class="project-text">
+            <p>Le projet visait à doter l'Arche de Ninie d'une identité visuelle forte, alignée sur ses valeurs de compassion, de responsabilité et d'action.</p>
+            <p>J'ai conçu une charte graphique complète (logo, couleurs, typographies, pictogrammes) et des supports cohérents (print, web, réseaux sociaux) pour unifier leur communication.</p>
+            <p>L'objectif : renforcer la lisibilité de leur engagement et valoriser l'énergie des bénévoles auprès du grand public.</p>
+        </div>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/adn1.webp') }}" alt="Logo Arche de Ninie">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Création d'une identité visuelle sensible</h3>
+        <p>Le logo, conçu dans un esprit flat design, met en scène un chien et un chat anthropomorphes soutenant une arche, symbole de refuge et d'engagement. L'ensemble véhicule une identité accessible, chaleureuse, immédiatement lisible, déclinable pour tous supports.</p>
+    </div>
+</section>
+
+<section class="project-block project-flex reverse fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/ADN3.webp') }}" alt="Site web responsive Arche de Ninie">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Site internet clair et accessible</h3>
+        <p>Un site clair, responsive, informatif et structuré autour des actions de l'association : recueillir, soigner, sensibiliser. L'accent a été mis sur l'accessibilité, la hiérarchisation des contenus et l'incitation à l'action (don, adoption, bénévolat).</p>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/ADN5.webp') }}" alt="supports prints Arche de Ninie">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Supports imprimés et communication digitale</h3>
+        <p>Des supports homogènes, pensés pour être facilement imprimés ou publiés, tout en gardant l'ADN graphique de l'association. Une cohérence visuelle pensée pour renforcer l'impact des messages sur le terrain comme en ligne.</p>
+    </div>
+</section>
+
+<section class="project-double-image">
+    <div class="double-image-container">
+        <img src="{{ asset('img/ADN4.webp') }}" alt="Création icones – Arche de Ninie">
+        <img src="{{ asset('img/ADN2.webp') }}" alt="Posts reseaux sociaux – Arche de Ninie">
+    </div>
+</section>
+{% endblock %}

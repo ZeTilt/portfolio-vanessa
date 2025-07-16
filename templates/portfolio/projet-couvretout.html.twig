@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet - CouvreTout{% endblock %}
+
+{% block body %}
+<section class="project-hero container fade-in">
+    <h1 class="project-title">COUVRETOUT</h1>
+    <p class="project-subtitle">
+        Un projet fictif complet pour démontrer mes compétences en design web et en création d'identité visuelle.
+    </p>
+    <p class="project-subtitle">
+        De la création du logo à la conception des maquettes UX/UI, en passant par le moodboard, les icônes et les visuels print : un projet pensé comme un vrai.
+    </p>
+    <div class="project-meta">
+        <span><strong>(Client)</strong><br>Projet fictif</span>
+        <span><strong>(Année)</strong><br>2024</span>
+        <span><strong>(Services)</strong><br>Identité visuelle & Design web</span>
+    </div>
+</section>
+
+<section class="full-width-image fade-in">
+    <img src="{{ asset('img/Card_CT2.webp') }}" alt="visuel couvretout" />
+</section>
+
+<section class="project-block no-line">
+    <div class="project-flex fade-in">
+        <div class="project-text">
+            <h2 class="project-heading-big">
+                UN PROJET FICTIF<br>POUR METTRE EN VALEUR<br>UN SAVOIR-FAIRE RÉEL
+            </h2>
+        </div>
+        <div class="project-text">
+            <p>Pour ce projet imaginé autour du secteur de la couverture, j'ai construit une identité visuelle complète, des maquettes web fonctionnelles et une ligne graphique cohérente. Chaque étape a été pensée pour simuler un projet client réel.</p>
+            <p>L'objectif : démontrer mes compétences transversales en UX/UI, en design graphique et en structuration de contenus numériques.</p>
+        </div>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/CT5.webp') }}" alt="Charte graphique CouvreTout">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Une identité visuelle impactante et cohérente</h3>
+        <p>Création du logo, choix des couleurs, typographies et construction d'un univers visuel sur mesure. Le tout décliné dans une mini charte graphique structurée.</p>
+    </div>
+</section>
+
+<section class="project-block project-flex reverse fade-in">
+    <div class="project-image before-after-slider" id="slider">
+        <img src="{{ asset('img/CT1.png') }}" alt="Maquette wireframe du projet CouvreTout" id="beforeImage">
+        <img src="{{ asset('img/CT2.png') }}" alt="Maquette finale du projet CouvreTout" id="afterImage">
+        <div class="slider-handle" id="handle"></div>
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Conception UX/UI – du fil de fer au design final</h3>
+        <p>Ce projet fictif m'a permis d'explorer tout le processus de création d'interface. J'ai d'abord réalisé une série de maquettes wireframe pour structurer les parcours utilisateur.</p>
+        <p>Ensuite, j'ai conçu la version finale en intégrant les éléments visuels issus de la charte graphique que j'ai définie.</p>
+        <p>Le slider ci-contre permet de comparer les deux étapes clés de cette conception.</p>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/CT6.webp') }}" alt="Illustration d'un service de qualité avec pictogrammes personnalisés">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Des pictogrammes clairs pour renforcer la lisibilité</h3>
+        <p>Pour illustrer les différents services, j'ai conçu une série d'icônes personnalisées, à la fois simples et expressives. Leur style s'inscrit dans l'univers graphique du site, garantissant une cohérence visuelle sur l'ensemble des pages.</p>
+        <p>Ce travail d'illustration contribue à rendre les messages plus accessibles, tout en apportant une touche graphique identifiable et professionnelle.</p>
+    </div>
+</section>
+
+<section class="project-double-image">
+    <div class="double-image-container">
+        <img src="{{ asset('img/CT4.webp') }}" alt="mockup site web – Couvretout">
+        <img src="{{ asset('img/CT3.webp') }}" alt="visuel section site – Couvretout">
+    </div>
+</section>
+{% endblock %}

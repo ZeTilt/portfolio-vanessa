@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet - France Infra Rouge{% endblock %}
+
+{% block body %}
+<section class="project-hero container fade-in">
+    <h1 class="project-title">FRANCE INFRA ROUGE</h1>
+    <p class="project-subtitle">
+        Refonte de la structure du site web de France Infra Rouge
+    </p>
+    <p class="project-subtitle">
+        Une réorganisation complète des parcours utilisateurs et de l'offre pour fluidifier la lecture, segmenter les services et valoriser l'expertise technique.
+    </p>
+    <div class="project-meta">
+        <span><strong>(Client)</strong><br>France Infra Rouge</span>
+        <span><strong>(Année)</strong><br>2025</span>
+        <span><strong>(Services)</strong><br>UX Design, UI Design, Audit ergonomique</span>
+    </div>
+</section>
+
+<section class="full-width-image fade-in">
+    <img src="{{ asset('img/Card_FIR2.webp') }}" alt="Audit UX/UI FIR" />
+</section>
+
+<section class="project-block no-line">
+    <div class="project-flex fade-in">
+        <div class="project-text">
+            <h2 class="project-heading-big">
+                AMÉLIORER<br>L'EXPÉRIENCE<br>UTILISATEUR
+            </h2>
+        </div>
+        <div class="project-text">
+            <p>Objectif : clarifier et rendre lisible l'offre FIR en repensant la structure du site selon les profils utilisateurs.</p>
+            <p>Contexte : site dense, peu lisible, circulation de l'information peu fluide. L'offre FIR (vente, location, maintenance, formation) nécessitait une présentation plus segmentée et pédagogique.</p>
+        </div>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/FIR1.webp') }}" alt="Audit UX/UI FIR">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Audit de l'existant et diagnostic</h3>
+        <p>Redondance des contenus, absence de ciblage des utilisateurs, difficulté de lecture de l'offre maintenance : plusieurs failles structurelles ont été identifiées et synthétisées dans un audit complet.</p>
+    </div>
+</section>
+
+<section class="project-block project-flex reverse fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/FIR2.webp') }}" alt="maquettes FIR">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Repenser les parcours utilisateurs</h3>
+        <p>Une nouvelle architecture a été conçue : segmentation claire de l'offre, création de wireframes, parcours spécifiques selon les cibles (entreprises, techniciens, acheteurs).</p>
+    </div>
+</section>
+
+<section class="project-block project-flex fade-in">
+    <div class="project-image">
+        <img src="{{ asset('img/FIR3.webp') }}" alt="Exemple UX UI Acoustique FIR">
+    </div>
+    <div class="project-text">
+        <h3 class="project-subheading">Un contenu pédagogique et accessible</h3>
+        <p>Restructuration complète de l'offre de maintenance : nouveaux schémas de navigation, pages explicatives, valorisation des types de maintenance et équipements concernés.</p>
+    </div>
+</section>
+
+<section class="project-double-image">
+    <div class="double-image-container">
+        <img src="{{ asset('img/FIR4.webp') }}" alt="Etude utilisateur support – FIR">
+        <img src="{{ asset('img/FIR5.webp') }}" alt="Etude utilisateur support – FIR">
+    </div>
+</section>
+{% endblock %}

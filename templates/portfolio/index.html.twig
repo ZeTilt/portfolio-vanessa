@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio Vanessa - Accueil{% endblock %}
+
+{% block body %}
+<section class="hero-kajo fade-in">
+    <div class="hero-split container">
+        <div class="hero-image">
+            <img src="{{ asset('img/portfolio_hero.webp') }}" alt="Mockup Portfolio">
+        </div>
+        <div class="hero-text">
+            <h1 class="hero-title">PORTFOLIO</h1>
+            <h2 class="hero-subtitle">L'art de s'adapter pour mieux créer.</h2>
+            <p class="italic-text">(Design graphique & digital)</p>
+            <p>Un portfolio de créations sur mesure, entre identité visuelle, web design et communication engagée.</p>
+        </div>
+    </div>
+</section>
+
+<section class="approche fade-in">
+    <div class="container">
+        <p class="approche-intro">(Aperçu de ma démarche)</p>
+        <h2 class="approche-title">
+            DES CRÉATIONS UTILES, CLAIRES<br>
+            AU SERVICE DES PROJETS.
+        </h2>
+        <p class="approche-text">
+            Concevoir un visuel, ce n'est pas juste embellir : c'est structurer une information, valoriser une action, ou donner de la lisibilité à un service.
+        </p>
+        <p class="approche-text">
+            Qu'il s'agisse d'une association locale, d'un projet citoyen ou d'un évènement public, chaque réalisation présentée ici a été pensée pour accompagner un message et toucher un public ciblé.
+        </p>
+    </div>
+</section>
+
+<section class="projects fade-in">
+    <div class="container">
+        <h2 class="projects-title">PROJETS</h2>
+        <p class="projects-subtitle">Découvrez des créations pensées pour informer, valoriser et transmettre.</p>
+
+        <div class="project-grid">
+            <!-- Projet 1 -->
+            <a href="{{ path('app_projet_ninie') }}" class="project-item">
+                <img src="{{ asset('img/Card_ADN1.webp') }}" alt="L'Arche de Ninie">
+                <div class="project-caption">
+                    <h3>L'Arche de Ninie</h3>
+                    <p>Identité visuelle & site web pour une association</p>
+                    <span class="project-date">(2024)</span>
+                </div>
+            </a>
+
+            <!-- Projet 2 -->
+            <a href="{{ path('app_projet_fir') }}" class="project-item">
+                <img src="{{ asset('img/Card_FIR1.webp') }}" alt="France Infra Rouge">
+                <div class="project-caption">
+                    <h3>France Infra Rouge</h3>
+                    <p>Refonte UX / UI</p>
+                    <span class="project-date">(2025)</span>
+                </div>
+            </a>
+
+            <!-- Projet 3 -->
+            <a href="{{ path('app_projet_couvretout') }}" class="project-item">
+                <img src="{{ asset('img/Card_CT1.webp') }}" alt="CouvreTout">
+                <div class="project-caption">
+                    <h3>CouvreTout</h3>
+                    <p>Projet fictif / charte graphique & web</p>
+                    <span class="project-date">(2024)</span>
+                </div>
+            </a>
+
+            <!-- Projet 4 -->
+            <a href="{{ path('app_projet_fdb') }}" class="project-item">
+                <img src="{{ asset('img/Card_FDB1.webp') }}" alt="Fleur de Bouchon 56">
+                <div class="project-caption">
+                    <h3>Fleur de Bouchon 56</h3>
+                    <p>Site Web pour une association</p>
+                    <span class="project-date">(2025)</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

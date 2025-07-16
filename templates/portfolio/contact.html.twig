@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<main class="contact-page fade-in">
+    <section class="contact-container">
+        <h1>Contact</h1>
+        <p>Une question, une collaboration, une mission&nbsp;? <br>N'hésitez pas à me contacter via ce formulaire.</p>
+
+        {% for message in app.flashes('success') %}
+            <div class="flash-message flash-success">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in app.flashes('error') %}
+            <div class="flash-message flash-error">{{ message }}</div>
+        {% endfor %}
+
+        {{ form_start(form, {'attr': {'class': 'contact-form'}}) }}
+            {{ form_label(form.name) }}
+            {{ form_widget(form.name) }}
+            {{ form_errors(form.name) }}
+
+            {{ form_label(form.email) }}
+            {{ form_widget(form.email) }}
+            {{ form_errors(form.email) }}
+
+            {{ form_label(form.message) }}
+            {{ form_widget(form.message) }}
+            {{ form_errors(form.message) }}
+
+            {{ form_widget(form.submit) }}
+        {{ form_end(form) }}
+    </section>
+</main>
+{% endblock %}
