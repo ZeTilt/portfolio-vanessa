@@ -23,7 +23,7 @@ burgerBtn.addEventListener('click', () => {
 });
 
 
-  console.log("Script chargé !");
+  // Script loaded successfully
 });
 
 // Version ajustée avec meilleure sensibilité au mouvement de souris
